@@ -113,7 +113,7 @@ class Question extends React.Component {
            {isCorrect? <Green> Correct</Green>: <Red> Wrong</Red>}</p>
            <br></br>
            {(num<9)&&<Button onClick={this.handleNext}>Next</Button>}</Result> }
-           {(num===9 &&  isSubmit)&& <Final><h2>Your total scores is {score} out of 10</h2> <Button onClick={this.handleRestart}>Restart</Button></Final>}
+           {(num===9 &&  isSubmit)&& <Final><h2>You got {score} out of 10 !</h2> <Button onClick={this.handleRestart}>Restart</Button></Final>}
                      
         </Form>
     )
